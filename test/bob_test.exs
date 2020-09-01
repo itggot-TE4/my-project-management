@@ -120,22 +120,22 @@ defmodule BobTest do
     assert Bob.hey("         hmmmmmmm...") == "Whatever."
   end
 
-  @tag :pending
+  #@tag :pending
   test "ending with whitespace" do
     assert Bob.hey("Okay if like my  spacebar  quite a bit?   ") == "Sure."
   end
 
-  @tag :pending
+  #@tag :pending
   test "other whitespace" do
     assert Bob.hey("\n\r \t") == "Fine. Be that way!"
   end
 
-  @tag :pending
+  #@tag :pending
   test "non-question ending with whitespace" do
     assert Bob.hey("This is a statement ending with whitespace     ") == "Whatever."
   end
 
-  @tag :pending
+  #@tag :pending
   test "shouting in Russian" do
     assert Bob.hey("УХОДИ") == "Whoa, chill out!"
   end
