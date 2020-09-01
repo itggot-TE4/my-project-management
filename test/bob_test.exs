@@ -45,32 +45,32 @@ defmodule BobTest do
     assert Bob.hey("This Isn't Shouting!") == "Whatever."
   end
 
-  @tag :pending
+  #@tag :pending
   test "forceful question" do
     assert Bob.hey("WHAT'S GOING ON?") == "Calm down, I know what I'm doing!"
   end
 
-  @tag :pending
+  #@tag :pending
   test "asking in capitals" do
     assert Bob.hey("THIS ISN'T SHOUTING?") == "Calm down, I know what I'm doing!"
   end
 
-  @tag :pending
+  #@tag :pending
   test "shouting numbers" do
     assert Bob.hey("1, 2, 3 GO!") == "Whoa, chill out!"
   end
 
-  @tag :pending
+  #@tag :pending
   test "shouting with special characters" do
     assert Bob.hey("ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!") == "Whoa, chill out!"
   end
 
-  @tag :pending
+  #@tag :pending
   test "shouting with no exclamation mark" do
     assert Bob.hey("I HATE THE DENTIST") == "Whoa, chill out!"
   end
 
-  @tag :pending
+  #@tag :pending
   test "statement containing question mark" do
     assert Bob.hey("Ending with ? means a question.") == "Whatever."
   end
