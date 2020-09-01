@@ -30,17 +30,17 @@ defmodule BobTest do
     assert Bob.hey("fffbbcbeab?") == "Sure."
   end
 
-  @tag :pending
+  #@tag :pending
   test "talking forcefully" do
     assert Bob.hey("Hi there!") == "Whatever."
   end
 
-  @tag :pending
+  #@tag :pending
   test "using acronyms in regular speech" do
     assert Bob.hey("It's OK if you don't want to go to the DMV.") == "Whatever."
   end
 
-  @tag :pending
+  #@tag :pending
   test "talking in capitals" do
     assert Bob.hey("This Isn't Shouting!") == "Whatever."
   end
