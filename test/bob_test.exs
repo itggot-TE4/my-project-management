@@ -85,37 +85,37 @@ defmodule BobTest do
     assert Bob.hey("  ") == "Fine. Be that way!"
   end
 
-  @tag :pending
+  #@tag :pending
   test "alternate silence" do
     assert Bob.hey("\t\t\t\t\t\t\t\t\t\t") == "Fine. Be that way!"
   end
 
-  @tag :pending
+  #@tag :pending
   test "only numbers" do
     assert Bob.hey("1, 2, 3") == "Whatever."
   end
 
-  @tag :pending
+  #@tag :pending
   test "multiple line question" do
     assert Bob.hey("\nDoes this cryogenic chamber make me look fat?\nNo.") == "Whatever."
   end
 
-  @tag :pending
+  #@tag :pending
   test "question with numbers" do
     assert Bob.hey("4?") == "Sure."
   end
 
-  @tag :pending
+  #@tag :pending
   test "non-letters with question" do
     assert Bob.hey(":) ?") == "Sure."
   end
 
-  @tag :pending
+  #@tag :pending
   test "prattling on" do
     assert Bob.hey("Wait! Hang on. Are you going to be OK?") == "Sure."
   end
 
-  @tag :pending
+  #@tag :pending
   test "starting with whitespace" do
     assert Bob.hey("         hmmmmmmm...") == "Whatever."
   end
