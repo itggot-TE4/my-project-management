@@ -10,6 +10,6 @@ defmodule Bob do
   end
 
   def silence?(input), do: String.trim(input) == ""
-  def shouting?(input), do: !String.match?(input, ~r/^(\d|\W)+$/) and String.upcase(input) == input
-  def question?(input), do: String.ends_with?(String.trim(input), "?")
+  def shouting?(input), do: input =~ ~r/\p{Lu}/u and String.upcase(input) == input
+  def question?(input), do: input =~ ~r/\?\s*$/u
 end
