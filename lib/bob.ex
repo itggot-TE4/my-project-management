@@ -1,5 +1,5 @@
 defmodule Bob do
-  def hey(input) do
+  def say(input) do
     cond do
       silence?(input) -> "Fine. Be that way!"
       question?(input) and shouting?(input) -> "Calm down, I know what I'm doing!"
