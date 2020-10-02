@@ -4,7 +4,9 @@
 ## Next
 ## Create conflict
 ## Rebase??
+## Jonathan
+## David
 ## Jacob
 ## Adrian
-## Alex NG
 ## Zander K
+## Alex NG
